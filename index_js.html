@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Eleven Image Hover – Fixed</title>
+</head>
+<body>
+    <div id="imgContainer" style="display:inline-block;">
+        <img 
+            id="myImage"
+            src="https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png"
+            alt="Demo Image"
+            width="300"
+        >
+    </div>
+    <script>
+        const container = document.getElementById("imgContainer");
+        const img = document.getElementById("myImage");
+
+        container.addEventListener("mouseenter", function() {
+            img.style.visibility = "hidden";
+        });
+
+        container.addEventListener("mouseleave", function() {
+            img.style.visibility = "visible";
+        });
+    </script>
+</body>
+</html>
